@@ -27,7 +27,7 @@ Valid Login
 
 To do the same in Selenium, you must look at the element and then **send_keys**.
 
-```
+```python
 From selenium.webdriver import Firefox
 executable_file = 'Filepath'
 browser = Firefox(execurable_file)
