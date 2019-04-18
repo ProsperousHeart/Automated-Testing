@@ -1,3 +1,4 @@
+<a href='https://www.learntocodeonline.com/'>![Learn To Code Online By Clicking Here](../Images/learn-to-code-online.png?raw=true "Learn To Code Online")</a>
 # What Is Robot Framework?
 
 [Robot Framework](https://robotframework.org/) is a generic test automation framework for acceptance testing.
@@ -28,7 +29,7 @@ Valid Login
 To do the same in Selenium, you must look at the element and then **send_keys**.
 
 ```python
-From selenium.webdriver import Firefox
+from selenium.webdriver import Firefox
 executable_file = 'Filepath'
 browser = Firefox(execurable_file)
 browser.get('https://duckduckgo.com')
