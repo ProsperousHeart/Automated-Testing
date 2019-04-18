@@ -1,6 +1,11 @@
 # Automated-Testing
 This repo will be used to structure the training I will create as well as go through.
 
+# Table Of Contents
+
+1. [Introduction](01_Introduction.MD)
+2. [Setup & Installation](02_SETUP_Installation.MD) (for Windows)
+
 # Special Thanks
 
 This section is to provide a shoutout to the sites and training courses I took in order to complete this repo.
