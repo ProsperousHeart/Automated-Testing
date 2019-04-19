@@ -4,8 +4,10 @@
 
 There is a subfolder specifically outlining how to use [Robot Framework](https://robotframework.org/) as your automated acceptance testing. 
 
-1. [Introduction](Robot-Framework/01_Introduction.MD)
-2. [Setup & Installation](Robot-Framework/02_SETUP_Installation.MD) (for Windows)
+1. [Introduction](01_Introduction.MD)
+2. [Setup & Installation](02_SETUP_Installation.MD) (for Windows)
+3. [PyCharm Setup](03_Setup_PyCharm.MD)
+4. [PIP Configuration](04_Configure_PIP.MD)
 
 # Special Thanks
 
