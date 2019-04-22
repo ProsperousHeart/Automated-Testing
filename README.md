@@ -14,6 +14,7 @@ There is a subfolder specifically outlining how to use [Robot Framework](https:/
 3. [PyCharm Setup](Robot-Framework/03_Setup_PyCharm.MD)
 4. [PIP Configuration](Robot-Framework/04_Configure_PIP.MD)
 5. [Robot Framework Installation](Robot-Framework/05_Install_Robot_Framework.MD)
+6. [Basic Robot Framework Structure](Robot-Framework/06_Basic_RF_Structure.MD)
 
 # Special Thanks
 
