@@ -29,11 +29,11 @@ For best practices, here are the folders suggested to have in each automation pr
 
 2. Resources
 
-This is where we will have a robot file that will behave as a resource.
+    This is where we will have a robot file that will behave as a resource.
 
-Robot Framework provides a lot of keywords to perform different tasks. This resource file is where you would provide your user-created keywords.
+    Robot Framework provides a lot of keywords to perform different tasks. This resource file is where you would provide your user-created keywords.
 
-Keywords can be created by directly writing python files or you can use existing keywords, merge them, and create a new keyword.
+    Keywords can be created by directly writing python files or you can use existing keywords, merge them, and create a new keyword.
 
 3. TestCases
 
