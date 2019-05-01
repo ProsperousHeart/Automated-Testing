@@ -196,4 +196,6 @@ To get keyword suggestions, you will need to install the `Intellibot with Seleni
 
 This should remove any of the red underlines for some of the keywords, as well as provide suggestions.
 
-Once you have installed the new plugin and restarted your PyCharm, go to:  `File > Settings`
+Once you have installed the new plugin and restarted your PyCharm, go to this location to ensure it's installed:  `File > Settings`
+
+You can also test by working in your robot file(s).
