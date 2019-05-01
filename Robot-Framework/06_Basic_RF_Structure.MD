@@ -77,4 +77,123 @@ If you wish to create any user-defined keywords you can write it here. It is an 
 
 Therefore this section is optional for Test Case files.
 
-**NOTE:** A resources file will have all but the `*** Test Cases ***` section as a requirement. 
+**NOTE:** A resources file will have all but the `*** Test Cases ***` section as a requirement.
+
+
+# Writing A Test Case
+
+Here are the steps to creating a test case:
+
+1. create a robot file in the `TestCases` folder
+
+2. create sections (as outlined previously with settings, variables, and test cases)
+
+3. define libraries
+
+    You can define these after you have installed them using:
+    `Library  LibraryName`
+    
+    For example:
+    
+    ``` python
+    *** Settings ***
+    Library  SeleniumLibrary
+    
+    *** Variables ***
+    
+    *** Test Cases ***
+    
+    *** Keywords ***
+    ```
+
+4. define variable
+    
+    You can define a variable using `${varName}` with 2 spaces and then the value.
+    
+    For example:
+    
+    ``` python
+    *** Settings ***
+    Library  SeleniumLibrary
+    
+    *** Variables ***
+    ${Browser}  Chrome
+    ${URL}  http://learntocodeonline.com
+    
+    *** Test Cases ***
+    
+    *** Keywords ***
+    ```
+    
+    **NOTE:** you will need to download the [ChromeDriver](http://chromedriver.chromium.org/) if using Chrome to allow for automated testing of webapps across many browsers. Once downloaded:
+        - unzip the ZIP file
+        - copy the ChromeDriver.exe file
+        - put it into your python > scripts folder (as well as within the virtual environment's scripts folder)
+    
+    Should you wise to use another browser, you will need:
+    - [geckodriver.exe](https://github.com/mozilla/geckodriver/releases) for FireFox
+    
+    You will then follow the same process to put the EXE into the respective Scripts folder. 
+
+5. write test case to start and close browser
+    
+    You will give a name to the test case.
+    
+    The test case info will start on the next line and a tab.
+    
+    Use keyword, 2 spaces and then the arguments:
+    - URL variable name to open
+    - variable name to affect and 2 spaces
+    
+    For example:
+    
+    ``` python
+    *** Settings ***
+    Library  SeleniumLibrary
+    
+    *** Variables ***
+    ${Browser}  Chrome
+    ${URL}  http://learntocodeonline.com
+    
+    *** Test Cases ***
+    TC_001 Browser Start and Close
+        Open Browser  ${URL} ${Browser1}
+        Close Browser
+    
+    *** Keywords ***
+    ```
+    
+    You can even add multiple browsers - just need to have different test cases for each.
+    
+    ``` python
+    *** Settings ***
+    Library  SeleniumLibrary
+    
+    *** Variables ***
+    ${Browser0}  Chrome
+    ${Browser2}  Firefox
+    ${URL}  http://learntocodeonline.com
+    
+    *** Test Cases ***
+    TC_001 Browser Start and Close
+        Open Browser  ${URL} ${Browser1}
+        Close Browser
+    
+    TC_002 Browser Start and Close
+        Open Browser  ${URL} ${Browser2}
+        Close Browser
+    ```
+
+# Executing a Test Case
+
+1. Right click on the test case ROBOT file then copy the path.
+2. Move to the location in command prompt that the file is stored in
+3. Run `robot FILENAME.robot`
+
+# Keyword Suggestions For Robot Framework
+
+To get keyword suggestions, you will need to install the `Intellibot with SeleniumLibrary` plugin for PyCharm. (Be sure you have uninstalled the Intellibot one from 2016 and restarted your IDE.)
+
+This should remove any of the red underlines for some of the keywords, as well as provide suggestions.
+
+Once you have installed the new plugin and restarted your PyCharm, go to:  `File > Settings`
