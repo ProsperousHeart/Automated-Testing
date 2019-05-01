@@ -157,7 +157,7 @@ Here are the steps to creating a test case:
     
     *** Test Cases ***
     TC_001 Browser Start and Close
-        Open Browser  ${URL} ${Browser1}
+        Open Browser  ${URL} ${Browser}
         Close Browser
     
     *** Keywords ***
@@ -176,11 +176,11 @@ Here are the steps to creating a test case:
     
     *** Test Cases ***
     TC_001 Browser Start and Close
-        Open Browser  ${URL} ${Browser1}
+        Open Browser  ${URL} ${Browser0}
         Close Browser
     
     TC_002 Browser Start and Close
-        Open Browser  ${URL} ${Browser2}
+        Open Browser  ${URL} ${Browser1}
         Close Browser
     ```
 
