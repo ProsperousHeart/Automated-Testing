@@ -10,6 +10,7 @@ There is a subfolder specifically outlining how to use [Robot Framework](https:/
 4. [PIP Configuration](04_Configure_PIP.MD)
 5. [Robot Framework Installation](05_Install_Robot_Framework.MD)
 6. [Basic Robot Framework Structure](06_Basic_RF_Structure.MD)
+7. [Working With Element Locators](07_Working_With_Element_Locators.MD)
 
 # Special Thanks
 
